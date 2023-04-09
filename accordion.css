@@ -14,31 +14,33 @@
      border-top: 1px solid #4a515733 ;
      position: relative;
      padding-block:10px;
-
+   
      
   }
    
   .accordion-header {
-    cursor: pointer;
     font-size: 23px;
     font-weight: 400;
-    margin-right: 2rem;
+    width: 80%;
+    padding-right: 2rem;
   }
-  .accordion-header::after{
-    content: url(/plus-solid.svg);
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 26px;
-    height: 15px;
-    width: 15px;
+   .header-wrraper{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
   }
-  
+   .hidden{
+    display: none;
+   }
+   svg{
+    width: 14px;
+   }
   .accordion-content {
     display: none;
-    padding-inline: 6px;
     font-size:20px;
     line-height:  1.701;
+    width: 90%;
   letter-spacing: normal;
   }
   
